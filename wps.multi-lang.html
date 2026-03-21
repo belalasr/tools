@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Office</title>
+
+<style>
+body {
+  margin:0;
+  font-family: system-ui, Arial;
+  background:#0f172a;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  text-align:center;
+}
+
+.box {
+  max-width:420px;
+  width:90%;
+}
+
+h1 {
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+p {
+  font-size:18px;
+  margin-bottom:25px;
+  color:#cbd5e1;
+}
+
+.btn {
+  display:block;
+  padding:18px;
+  font-size:20px;
+  background:#00ffcc;
+  color:#000;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h1 id="title"></h1>
+<p id="desc"></p>
+
+<a href="https://cctlds.homes/click/1" class="btn" id="btn"></a>
+
+</div>
+
+<script>
+const lang = navigator.language || "en";
+
+const t = {
+en:{t:"Free Office Suite",d:"Download and start using it instantly.",b:"Download Now"},
+ar:{t:"برنامج أوفيس مجاني",d:"قم بالتنزيل وابدأ الاستخدام فوراً",b:"تحميل الآن"},
+es:{t:"Suite de Oficina Gratis",d:"Descárgalo y úsalo al instante",b:"Descargar"},
+fr:{t:"Suite Bureautique Gratuite",d:"Téléchargez et utilisez immédiatement",b:"Télécharger"},
+de:{t:"Kostenlose Office Suite",d:"Jetzt herunterladen und sofort nutzen",b:"Herunterladen"},
+ru:{t:"Бесплатный офисный пакет",d:"Скачайте и начните использовать",b:"Скачать"},
+pt:{t:"Suite de Escritório Gratuita",d:"Baixe e comece a usar agora",b:"Baixar"},
+id:{t:"Aplikasi Office Gratis",d:"Unduh dan gunakan sekarang",b:"Unduh"},
+tr:{t:"Ücretsiz Ofis Programı",d:"İndir ve hemen kullan",b:"İndir"},
+hi:{t:"फ्री ऑफिस सुइट",d:"अभी डाउनलोड करें और उपयोग करें",b:"डाउनलोड करें"}
+};
+
+let key = "en";
+
+if (lang.startsWith("ar")) key="ar";
+else if (lang.startsWith("es")) key="es";
+else if (lang.startsWith("fr")) key="fr";
+else if (lang.startsWith("de")) key="de";
+else if (lang.startsWith("ru")) key="ru";
+else if (lang.startsWith("pt")) key="pt";
+else if (lang.startsWith("id")) key="id";
+else if (lang.startsWith("tr")) key="tr";
+else if (lang.startsWith("hi")) key="hi";
+
+document.getElementById("title").innerText = t[key].t;
+document.getElementById("desc").innerText = t[key].d;
+document.getElementById("btn").innerText = t[key].b;
+</script>
+
+</body>
+</html>
